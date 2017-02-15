@@ -1,0 +1,5 @@
+﻿enable-migrations -ContextTypeName SchoolContext -MigrationsDirectory Migrations\School
+
+add-migration -ConfigurationTypeName w05a.Migrations.School.Configuration "InitialCreate"
+
+update-database -ConfigurationTypeName w05a.Migrations.School.Configuration 
